@@ -1,0 +1,26 @@
+# Site settings
+title: eHealth Bootstrap Theme
+email: brennan.novak@ehealthnigeria.org
+
+description: A Jekyll config that renders a site for eHealth Bootstrap testing
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://ehealthafrica.org" # the base hostname & protocol for your site
+
+# Server
+source:           examples
+destination:      _site
+host:             0.0.0.0
+port:             9001
+url:              http://0.0.0.0
+encoding:         UTF-8
+
+# Custom vars
+current_version:  3.3.1
+repo:             https://github.com/eHealthAfrica/ehealth-bootstrap-theme
+
+twitter_username: ehealthafrica
+github_username:  ehealthafrica
+
+# Build settings
+markdown: kramdown
