@@ -8,7 +8,6 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ehealthafrica.org" # the base hostname & protocol for your site
 
 # Server
-source:           examples
 destination:      _site
 host:             0.0.0.0
 port:             9001
@@ -21,6 +20,10 @@ repo:             https://github.com/eHealthAfrica/ehealth-bootstrap-theme
 
 twitter_username: ehealthafrica
 github_username:  ehealthafrica
+
+ehealth_versions: ["0.1", "0.2"]
+ehealth_theme_version: "0.1"
+ehealth_apps:     ["call-center", "sense", "journal", "dashboard"]
 
 # Build settings
 markdown: kramdown
