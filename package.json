@@ -1,6 +1,6 @@
 {
   "name": "ehealth-bootstrap",
-  "description": "A unified theme for eHealth Africa.",
+  "description": "A unified Bootstrap theme for eHealth Africa.",
   "version": "3.3.1",
   "keywords": [
     "css",
@@ -21,14 +21,14 @@
   "main": "./dist/js/npm",
   "repository": {
     "type": "git",
-    "url": "https://github.com/twbs/bootstrap.git"
+    "url": "https://github.com/eHealthAfrica/ehealth-bootstrap.git"
   },
   "bugs": {
-    "url": "https://github.com/twbs/bootstrap/issues"
+    "url": "https://github.com/eHealthAfrica/ehealth-bootstrap/issues"
   },
   "license": {
     "type": "MIT",
-    "url": "https://github.com/twbs/bootstrap/blob/master/LICENSE"
+    "url": "https://github.com/eHealthAfrica/ehealth-bootstrap/blob/master/LICENSE"
   },
   "devDependencies": {
     "btoa": "~1.1.2",

@@ -107,10 +107,10 @@ module.exports = function (grunt) {
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>.css.map',
-          sourceMapFilename: 'css/<%= pkg.name %>.css.map'
+          sourceMapFilename: '0.1/<%= pkg.name %>.css.map'
         },
         src: 'less/bootstrap.less',
-        dest: 'examples/css/<%= pkg.name %>.css'
+        dest: '0.1/<%= pkg.name %>.css'
       },
       compileTheme: {
         options: {
@@ -118,10 +118,10 @@ module.exports = function (grunt) {
           sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>-theme.css.map',
-          sourceMapFilename: 'examples/css/<%= pkg.name %>-theme.css.map'
+          sourceMapFilename: '0.1/<%= pkg.name %>-theme.css.map'
         },
         src: 'less/theme.less',
-        dest: 'examples/css/<%= pkg.name %>-theme.css'
+        dest: '0.1/<%= pkg.name %>-theme.css'
       }
     },
 
@@ -133,13 +133,13 @@ module.exports = function (grunt) {
         options: {
           map: true
         },
-        src: 'css/<%= pkg.name %>.css'
+        src: '0.1/<%= pkg.name %>.css'
       },
       theme: {
         options: {
           map: true
         },
-        src: 'examples/css/<%= pkg.name %>-theme.css'
+        src: '0.1/<%= pkg.name %>-theme.css'
       },
       docs: {
         src: 'docs/assets/css/src/docs.css'
@@ -157,8 +157,8 @@ module.exports = function (grunt) {
         csslintrc: 'less/.csslintrc'
       },
       dist: [
-        'examples/css/bootstrap.css',
-        'examples/css/bootstrap-theme.css'
+        '0.1/bootstrap.css',
+        '0.1/bootstrap-theme.css'
       ],
       examples: [
         'examples/**/*.css'
@@ -179,19 +179,19 @@ module.exports = function (grunt) {
         noAdvanced: true
       },
       minifyCore: {
-        src: 'examples/css/<%= pkg.name %>.css',
-        dest: 'examples/css/<%= pkg.name %>.min.css'
+        src: '0.1/<%= pkg.name %>.css',
+        dest: '0.1/<%= pkg.name %>.min.css'
       },
       minifyTheme: {
-        src: 'examples/css/<%= pkg.name %>-theme.css',
-        dest: 'examples/css/<%= pkg.name %>-theme.min.css'
+        src: '0.1/<%= pkg.name %>-theme.css',
+        dest: '0.1/<%= pkg.name %>-theme.min.css'
       },
       docs: {
         src: [
-          'examples/css/src/docs.css',
-          'examples/css/src/pygments-manni.css'
+          '0.1/src/docs.css',
+          '0.1/src/pygments-manni.css'
         ],
-        dest: 'examples/css/docs.min.css'
+        dest: '0.1/docs.min.css'
       }
     },
 
@@ -201,7 +201,7 @@ module.exports = function (grunt) {
         banner: '<%= banner %>'
       },
       files: {
-        src: 'examples/css/*.css'
+        src: '0.1/*.css'
       }
     },
 
@@ -211,9 +211,9 @@ module.exports = function (grunt) {
       },
       dist: {
         expand: true,
-        cwd: 'examples/css/',
+        cwd: '0.1/',
         src: ['*.css', '!*.min.css'],
-        dest: 'examples/css/'
+        dest: '0.1/'
       },
       examples: {
         expand: true,
@@ -222,8 +222,8 @@ module.exports = function (grunt) {
         dest: 'examples/'
       },
       docs: {
-        src: 'examples/css/src/docs.css',
-        dest: 'examples/css/src/docs.css'
+        src: '0.1/src/docs.css',
+        dest: '0.1/src/docs.css'
       }
     },
 
@@ -336,14 +336,15 @@ module.exports = function (grunt) {
   });
 
   // Docs task.
-  grunt.registerTask('docs-css', ['autoprefixer:docs', 'autoprefixer:examples', 'csscomb:docs', 'csscomb:examples', 'cssmin:docs']);
-  grunt.registerTask('lint-docs-css', ['csslint:docs', 'csslint:examples']);
-  grunt.registerTask('docs-js', ['uglify:docsJs', 'uglify:customize']);
-  grunt.registerTask('lint-docs-js', ['jshint:assets', 'jscs:assets']);
-  grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs', 'build-customizer']);
+//  grunt.registerTask('docs-css', ['autoprefixer:docs', 'autoprefixer:examples', 'csscomb:docs', 'csscomb:examples', 'cssmin:docs']);
+//  grunt.registerTask('lint-docs-css', ['csslint:docs', 'csslint:examples']);
+//  grunt.registerTask('docs-js', ['uglify:docsJs', 'uglify:customize']);
+//  grunt.registerTask('lint-docs-js', ['jshint:assets', 'jscs:assets']);
+//  grunt.registerTask('docs', ['docs-css', 'lint-docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs', 'build-customizer']);
 
   // Task for updating the cached npm packages used by the Travis build (which are controlled by test-infra/npm-shrinkwrap.json).
   // This task should be run and the updated file should be committed whenever Bootstrap's dependencies change.
+/*
   grunt.registerTask('update-shrinkwrap', ['exec:npmUpdate', '_update-shrinkwrap']);
   grunt.registerTask('_update-shrinkwrap', function () {
     var done = this.async();
@@ -357,4 +358,5 @@ module.exports = function (grunt) {
       done();
     });
   });
+*/
 };
