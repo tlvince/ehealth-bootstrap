@@ -11,14 +11,16 @@
 @gray-darker:           lighten(@gray-base, 13.5%);
 @gray-dark:             lighten(@gray-base, 20%);
 @gray:                  lighten(@gray-base, 33.5%);
-@gray-light:            lighten(@gray-base, 46.7%);
-@gray-lighter:          lighten(@gray-base, 93.5%);
+@gray-light:            lighten(@gray-base, 72.7%);
+@gray-lighter:          lighten(@gray-base, 94%);
 
 @brand-primary:         #0F74BD;
 @brand-success:         #03A678;
 @brand-info:            #8BC8DC;
 @brand-warning:         #F39C12;
 @brand-danger:          #EF4836;
+
+@brand-africa:          #E8D8C4;
 
 //== Scaffolding
 //
@@ -28,6 +30,7 @@
 @body-bg:               #fff;
 //** Global text color on `<body>`.
 @text-color:            #444;
+@text-color-inverse:    #fff;
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -41,7 +44,11 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-heading:     Cabin, sans-serif;
+@font-family-cabin:       'Cabin-Regular', sans-serif;
+@font-family-heading:     'Cabin-Bold', sans-serif;
+@font-family-medium:      'Cabin-Medium', sans-serif;
+@font-family-italic:      'Cabin-Italic', sans-serif;
+
 @font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
@@ -102,14 +109,14 @@
 @line-height-large:         1.33;
 @line-height-small:         1.5;
 
-@border-radius-base:        3px;
-@border-radius-large:       3px;
-@border-radius-small:       3px;
+@border-radius-base:        4px;
+@border-radius-large:       4px;
+@border-radius-small:       4px;
 
 //** Global color for active items (e.g., navs or dropdowns).
-@component-active-color:    #fff;
+@component-active-color:    @text-color;
 //** Global background color for active items (e.g., navs or dropdowns).
-@component-active-bg:       @brand-primary;
+@component-active-bg:       @brand-africa;
 
 //** Width of the `border` for generating carets that indicator dropdowns.
 @caret-width-base:          4px;
@@ -129,13 +136,13 @@
 //** Default background color used for all tables.
 @table-bg:                      transparent;
 //** Background color used for `.table-striped`.
-@table-bg-accent:               #f9f9f9;
+@table-bg-accent:               @gray-lighter;
 //** Background color used for `.table-hover`.
-@table-bg-hover:                #f5f5f5;
+@table-bg-hover:                @gray-lighter;
 @table-bg-active:               @table-bg-hover;
 
 //** Border color for table and cell borders.
-@table-border-color:            #ddd;
+@table-border-color:            @gray-light;
 
 
 //== Buttons
@@ -569,7 +576,7 @@
 //** Default label text color
 @label-color:                 #fff;
 //** Default text color of a linked label
-@label-link-hover-color:      #fff;
+@label-link-hover-color:      #ddd;
 
 
 //== Modals
@@ -660,20 +667,20 @@
 //** Background color on `.list-group-item`
 @list-group-bg:                 #fff;
 //** `.list-group-item` border color
-@list-group-border:             #ddd;
+@list-group-border:             @gray-light;
 //** List group border radius
 @list-group-border-radius:      @border-radius-base;
 
 //** Background color of single list items on hover
-@list-group-hover-bg:           #f5f5f5;
+@list-group-hover-bg:           @gray-lighter;
 //** Text color of active list items
-@list-group-active-color:       @component-active-color;
+@list-group-active-color:       @text-color;
 //** Background color of active list items
 @list-group-active-bg:          @component-active-bg;
 //** Border color of active list elements
 @list-group-active-border:      @list-group-active-bg;
 //** Text color for content within active list items
-@list-group-active-text-color:  lighten(@list-group-active-bg, 40%);
+@list-group-active-text-color:  @gray-dark;
 
 //** Text color of disabled list items
 @list-group-disabled-color:      @gray-light;
@@ -684,7 +691,7 @@
 
 @list-group-link-color:         #555;
 @list-group-link-hover-color:   @list-group-link-color;
-@list-group-link-heading-color: #333;
+@list-group-link-heading-color: @text-color;
 
 
 //== Panels
@@ -703,7 +710,7 @@
 
 @panel-default-text:          @gray-dark;
 @panel-default-border:        #ddd;
-@panel-default-heading-bg:    #f5f5f5;
+@panel-default-heading-bg:    @brand-africa;
 
 @panel-primary-text:          #fff;
 @panel-primary-border:        @brand-primary;
@@ -763,7 +770,7 @@
 @badge-bg:                    @gray-light;
 
 //** Badge text color in active nav link
-@badge-active-color:          @link-color;
+@badge-active-color:          @text-color;
 //** Badge background color in active nav link
 @badge-active-bg:             #fff;
 
@@ -847,9 +854,9 @@
 //** Blockquote font size
 @blockquote-font-size:        (@font-size-base * 1.25);
 //** Blockquote border color
-@blockquote-border-color:     @gray-lighter;
+@blockquote-border-color:     @gray-light;
 //** Page header border color
-@page-header-border-color:    @gray-lighter;
+@page-header-border-color:    @gray-light;
 //** Width of horizontal description list titles
 @dl-horizontal-offset:        @component-offset-horizontal;
 //** Horizontal line color.
