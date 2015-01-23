@@ -90,13 +90,14 @@ module.exports = function(grunt) {
       options: {
         sourceMap: true,
         includePaths: [
-          'bower_components/bootstrap-sass/assets/stylesheets/'
+          'bower_components/bootstrap-sass/assets/stylesheets',
+          '0.1'
         ]
       },
       dist: {
         files: {
-          '0.1/ehealth-bootstrap-new.css': '0.1/ehealth-bootstrap.scss'
-          '0.1/ehealth-bootstrap-new-theme.css': '0.1/ehealth-bootstrap-theme.scss'
+          '0.1/bootstrap.css': '0.1/bootstrap.scss',
+          '0.1/bootstrap-ehealth.css': '0.1/bootstrap-ehealth.scss'
         }
       }
     }
