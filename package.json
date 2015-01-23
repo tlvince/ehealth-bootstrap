@@ -78,5 +78,8 @@
     "buildConfig": {
       "uglify": true
     }
+  },
+  "dependencies": {
+    "grunt-sass": "^0.17.0"
   }
 }
