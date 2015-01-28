@@ -8,11 +8,10 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://ehealthafrica.org" # the base hostname & protocol for your site
 
 # Server
-destination:      _site
-host:             0.0.0.0
-port:             9001
-url:              http://0.0.0.0
+destination:      _gh_pages
 encoding:         UTF-8
+
+exclude:          ["bower_components", "node_modules", "grunt", "sass"]
 
 # Custom vars
 current_version:  3.3.1
