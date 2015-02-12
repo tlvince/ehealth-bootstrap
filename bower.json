@@ -14,8 +14,8 @@
   ],
   "homepage": "http://ehealthafrica.org",
   "main": [
-    "0.1/bootstrap.css",
-    "0.1/bootstrap-ehealth.css",
+    "default/bootstrap.css",
+    "default/bootstrap-ehealth.css",
     "fonts/glyphicons-halflings-regular.eot",
     "fonts/glyphicons-halflings-regular.svg",
     "fonts/glyphicons-halflings-regular.ttf",
@@ -24,8 +24,5 @@
   "ignore": [
     "/.*",
     "_config.yml"
-  ],
-  "dependencies": {
-    "bootstrap-sass": ">= 3.2.0"
-  }
+  ]
 }

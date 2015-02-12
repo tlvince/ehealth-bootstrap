@@ -4,7 +4,7 @@
 // --------------------------------------------------
 @import "default/fonts.scss";
 @import "default/variables.scss";
-@import "bootstrap/mixins";
+@import "sass/mixins";
 
 
 //
@@ -179,7 +179,7 @@
 // Call Center navbar
 .navbar-call-center {
 
-  background: $brand-primary;  
+  background: $brand-primary;
 
   .navbar-nav > .open > a,
   .navbar-nav > .active > a {
@@ -371,7 +371,7 @@
 }
 
 
-// 
+//
 // eHealth Extras
 // --------------------------------------------------
 .brand-primary-on {

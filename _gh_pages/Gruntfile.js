@@ -70,7 +70,7 @@ module.exports = function(grunt) {
         }]
       }
     },
- 
+
     // Run some tasks in parallel to speed up the build process
     concurrent: {
       server: [
@@ -90,7 +90,6 @@ module.exports = function(grunt) {
       options: {
         sourceMap: true,
         includePaths: [
-          'bower_components/bootstrap-sass/assets/stylesheets',
           'default'
         ]
       },
