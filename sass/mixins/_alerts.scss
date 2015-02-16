@@ -3,7 +3,7 @@
 @mixin alert-variant($background, $border, $text-color) {
   background-color: $background;
   border-color: $border;
-  color: $text-color;
+  color: white;
 
   hr {
     border-top-color: darken($border, 5%);

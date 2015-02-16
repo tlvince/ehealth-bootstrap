@@ -273,7 +273,7 @@
 // Mixin for generating new styles
 @mixin alert-styles($color) {
   font-family: $font-family-sans-serif;
-  border: 0px;
+  //border: 0px;
 }
 
 // Apply the mixin to the alerts
