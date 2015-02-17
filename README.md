@@ -1,10 +1,11 @@
 # [eHealth Africa Bootstrap Theme](http://ehealthafrica.org)
 
-This theme is based on Bootstrap 3.0 and is to be used across all applications 
+This theme is based on Bootstrap 3.0 and is to be used across all applications
 
 ## Table of contents
 
 - [Quick start](#quick-start)
+- [Custom eHealth Elements and Attributes](#custom-ehealth-elements-and-attributes)
 
 ## Quick start
 
@@ -14,6 +15,27 @@ Four quick start options are available:
 
 Read the [Getting started page](http://getbootstrap.com/getting-started/) for information on the framework contents, templates and examples, and more.
 
+## Custom eHealth Elements and Attributes
+
+### Arrows for Alerts
+
+The eHealth theme includes three additional class types to add a small arrow to any side of an alert box, to help make clear what the alert refers to:
+
+![](screenshots/alert-arrow.png)
+
+These are bootstrap style, so they require three classes to work:
+
+  - `.arrow` for the base styles
+  - `.arrow-dir-XX` for the direction of the arrow (`up`, `rt`, `dn` or `lt`)
+  - `.arrow-pos-X` for the position along the respective edge (`t`, `r`, `b`, `l` or `c`), meaning top, right, bottom, left or center (avoid pointless combinations, such as `b` with `up` or `dn`)
+
+The arrow automatically takes on the colour of the alert box.
+
+So the red alert box with an arrow pointing up in the center (from the image above) is:
+
+````
+    <div class="alert alert-danger arrow arrow-dir-up arrow-pos-c"></div>
+````
 
 ## Documentation
 
