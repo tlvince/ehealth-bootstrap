@@ -359,6 +359,9 @@
 .panel-warning > .panel-heading   { @include panel-heading-styles($panel-warning-heading-bg); }
 .panel-danger > .panel-heading    { @include panel-heading-styles($panel-danger-heading-bg); }
 
+.panel-title{
+  text-transform: capitalize;
+}
 
 //
 // Wells
@@ -419,6 +422,7 @@
   background: $body-bg;
   font-size: 1em;
   color: $pale-text;
+  text-transform: capitalize;
 }
 
 .panel-body .horizontal-rule {

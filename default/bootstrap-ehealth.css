@@ -246,6 +246,9 @@
 .panel-danger > .panel-heading {
   border-bottom: 0px; }
 
+.panel-title {
+  text-transform: capitalize; }
+
 .well {
   border: 0px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -284,7 +287,8 @@
   padding: 1em;
   background: #fff;
   font-size: 1em;
-  color: #cccccc; }
+  color: #cccccc;
+  text-transform: capitalize; }
 
 .panel-body .horizontal-rule {
   border-top-color: #cccccc; }
