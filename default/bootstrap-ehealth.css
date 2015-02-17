@@ -308,59 +308,54 @@ So a complete alert with an arrow pointing up in the top left is:
 
 .arrow {
   position: relative; }
+  .arrow:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: inherit; }
 
-.arrow:before {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-color: inherit; }
-
-/* Box Arrow variants, clockwise from top left*/
-/* Offset from edges and colors */
+/* Alert Arrow variants, clockwise from top left*/
+/* Colours and Offset from edges */
 .arrow-dir-up {
   margin-top: 20px; }
-
-.arrow-dir-up:before {
-  top: -10px;
-  border-top: none;
-  border-right: 7px solid transparent;
-  border-bottom-width: 10px;
-  border-bottom-style: solid;
-  border-left: 7px solid transparent; }
+  .arrow-dir-up:before {
+    top: -10px;
+    border-top: none;
+    border-right: 7px solid transparent;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-left: 7px solid transparent; }
 
 .arrow-dir-rt {
   margin-right: 20px; }
-
-.arrow-dir-rt:before {
-  right: -10px;
-  border-top: 7px solid transparent;
-  border-right: none;
-  border-bottom: 7px solid transparent;
-  border-left-width: 10px;
-  border-left-style: solid; }
+  .arrow-dir-rt:before {
+    right: -10px;
+    border-top: 7px solid transparent;
+    border-right: none;
+    border-bottom: 7px solid transparent;
+    border-left-width: 10px;
+    border-left-style: solid; }
 
 .arrow-dir-dn {
   margin-bottom: 20px; }
-
-.arrow-dir-dn:before {
-  bottom: -10px;
-  border-top-width: 10px;
-  border-top-style: solid;
-  border-right: 7px solid transparent;
-  border-bottom: none;
-  border-left: 7px solid transparent; }
+  .arrow-dir-dn:before {
+    bottom: -10px;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-right: 7px solid transparent;
+    border-bottom: none;
+    border-left: 7px solid transparent; }
 
 .arrow-dir-lt {
   margin-left: 20px; }
-
-.arrow-dir-lt:before {
-  left: -10px;
-  border-top: 7px solid transparent;
-  border-right-width: 10px;
-  border-right-style: solid;
-  border-bottom: 7px solid transparent;
-  border-left: none; }
+  .arrow-dir-lt:before {
+    left: -10px;
+    border-top: 7px solid transparent;
+    border-right-width: 10px;
+    border-right-style: solid;
+    border-bottom: 7px solid transparent;
+    border-left: none; }
 
 /* Offset from corners */
 .arrow-pos-t:before {
