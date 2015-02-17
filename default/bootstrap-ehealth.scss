@@ -397,3 +397,33 @@
 .brand-africa-on {
   background: $brand-africa-on;
 }
+
+//
+// eHealth Horizontal Rules with labels
+// --------------------------------------------------
+
+.horizontal-rule {
+  position: relative;
+  display: block;
+  margin-top: 2em;
+  height: 2em;
+  border-top: 2px solid $gray-lighter;
+  text-align: center;
+}
+
+.horizontal-rule .label {
+  position: relative;
+  top: -1.5em;
+  display: inline-block;
+  padding: 1em;
+  background: $body-bg;
+  font-size: 1em;
+  color: $pale-text;
+}
+
+.panel-body .horizontal-rule {
+  border-top-color: $pale-text;
+  .label {
+    background-color: $gray-lighter;
+  }
+}

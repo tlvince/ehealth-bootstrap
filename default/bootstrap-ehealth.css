@@ -269,4 +269,26 @@
 .brand-africa-on {
   background: #f6f0e9; }
 
+.horizontal-rule {
+  position: relative;
+  display: block;
+  margin-top: 2em;
+  height: 2em;
+  border-top: 2px solid #f2f2f2;
+  text-align: center; }
+
+.horizontal-rule .label {
+  position: relative;
+  top: -1.5em;
+  display: inline-block;
+  padding: 1em;
+  background: #fff;
+  font-size: 1em;
+  color: #cccccc; }
+
+.panel-body .horizontal-rule {
+  border-top-color: #cccccc; }
+  .panel-body .horizontal-rule .label {
+    background-color: #f2f2f2; }
+
 /*# sourceMappingURL=bootstrap-ehealth.css.map */
