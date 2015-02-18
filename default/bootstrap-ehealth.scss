@@ -12,6 +12,8 @@
 // --------------------------------------------------
 
 // Common styles
+.btn,
+.btn-neutral,
 .btn-default,
 .btn-primary,
 .btn-success,
@@ -68,6 +70,7 @@
 }
 
 // Apply the mixin to the buttons
+.btn-neutral { @include btn-styles($gray-light);}
 .btn-default { @include btn-styles($btn-default-bg); border-color: #ccc; }
 .btn-primary { @include btn-styles($btn-primary-bg); }
 .btn-success { @include btn-styles($btn-success-bg); }
