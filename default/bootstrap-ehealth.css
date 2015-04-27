@@ -18,14 +18,27 @@
   src: url('../fonts/Cabin-Bold.eot');
   src: url('../fonts/Cabin-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Cabin-Bold.woff') format('font-woff'), url('../fonts/Cabin-Bold.ttf') format('truetype'); }
 
-.btn-default, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger {
+.btn, .btn-neutral, .btn-default, .btn-primary, .btn-success, .btn-info, .btn-warning, .btn-danger {
   font-family: 'Cabin-Bold', sans-serif;
   font-weight: 300; }
-  .btn-default .badge, .btn-primary .badge, .btn-success .badge, .btn-info .badge, .btn-warning .badge, .btn-danger .badge {
+  .btn .badge, .btn-neutral .badge, .btn-default .badge, .btn-primary .badge, .btn-success .badge, .btn-info .badge, .btn-warning .badge, .btn-danger .badge {
     text-shadow: none; }
 
 .btn:active, .btn.active {
   background-image: none; }
+
+.btn-neutral {
+  box-shadow: 2px 2px 0px 0px #939393;
+  border-color: #b9b9b9; }
+  .btn-neutral:hover, .btn-neutral:focus {
+    background-color: #9b9b9b;
+    background-position: 0 -15px; }
+  .btn-neutral:active, .btn-neutral.active {
+    background-color: #9b9b9b;
+    border-color: #969696; }
+  .btn-neutral.disabled, .btn-neutral:disabled, .btn-neutral[disabled] {
+    background-color: #9b9b9b;
+    background-image: none; }
 
 .btn-default {
   box-shadow: 2px 2px 0px 0px #d9d9d9;
@@ -135,10 +148,6 @@
 
 .navbar-brand, .navbar-nav > li > a {
   text-shadow: 0 0 0; }
-
-.navbar-brand {
-  position: relative;
-  top: -6px; }
 
 .navbar-brand > img {
   height: 32px;
