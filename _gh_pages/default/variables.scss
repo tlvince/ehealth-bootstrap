@@ -12,8 +12,8 @@ $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:              lighten($gray-base, 20%) !default;   // #333
 $gray:                   lighten($gray-base, 33.5%) !default; // #555
-$gray-light:             lighten($gray-base, 72.7%) !default; // #777
-$gray-lighter:           lighten($gray-base, 95%) !default; // #eee
+$gray-light:             lighten($gray-base, 72.7%) !default; // #b9b9b9
+$gray-lighter:           lighten($gray-base, 95%) !default; // #f2f2f2
 
 $brand-primary:          #0F74BD !default; // #337ab7
 $brand-success:          #03A678 !default;
@@ -29,6 +29,7 @@ $brand-warning-on:       lighten($brand-warning, 10%) !default;
 $brand-danger-on:        lighten($brand-danger, 10%) !default;
 $brand-africa-on:        lighten($brand-africa, 10%) !default;
 
+$pale-text:              lighten($gray-base, 80%) !default; // #ccc
 
 //== Scaffolding
 //
@@ -261,7 +262,8 @@ $dropdown-link-hover-bg:         #f5f5f5 !default;
 //** Active dropdown menu item text color.
 $dropdown-link-active-color:     $component-active-color !default;
 //** Active dropdown menu item background color.
-$dropdown-link-active-bg:        $component-active-bg !default;
+//$dropdown-link-active-bg:        $component-active-bg !default;
+$dropdown-link-active-bg:        $brand-info-on !default;
 
 //** Disabled dropdown menu item background color.
 $dropdown-link-disabled-color:   $gray-light !default;
@@ -505,19 +507,19 @@ $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             $text-color-inverse !default;
+$state-success-text:             $brand-success !default;
 $state-success-bg:               $brand-success !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
 
-$state-info-text:                $text-color-inverse !default;
+$state-info-text:                $brand-info !default;
 $state-info-bg:                  $brand-info !default;
 $state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
 
-$state-warning-text:             $text-color-inverse !default;
+$state-warning-text:             $brand-warning !default;
 $state-warning-bg:               $brand-warning !default;
 $state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
 
-$state-danger-text:              $text-color-inverse !default;
+$state-danger-text:              $brand-danger !default;
 $state-danger-bg:                $brand-danger !default;
 $state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
 

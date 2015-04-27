@@ -102,8 +102,7 @@
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-  @include gradient-vertical($start-color: $dropdown-link-hover-bg, $end-color: darken($dropdown-link-hover-bg, 5%));
-  background-color: darken($dropdown-link-hover-bg, 5%);
+  background-color: $brand-info-on;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -273,7 +272,7 @@
 // Mixin for generating new styles
 @mixin alert-styles($color) {
   font-family: $font-family-sans-serif;
-  border: 0px;
+  //border: 0px;
 }
 
 // Apply the mixin to the alerts
@@ -359,6 +358,9 @@
 .panel-warning > .panel-heading   { @include panel-heading-styles($panel-warning-heading-bg); }
 .panel-danger > .panel-heading    { @include panel-heading-styles($panel-danger-heading-bg); }
 
+.panel-title{
+  text-transform: capitalize;
+}
 
 //
 // Wells
@@ -396,4 +398,137 @@
 
 .brand-africa-on {
   background: $brand-africa-on;
+}
+
+//
+// eHealth Horizontal Rules with labels
+// --------------------------------------------------
+
+.horizontal-rule {
+  position: relative;
+  display: block;
+  margin-top: 2em;
+  height: 2em;
+  border-top: 2px solid $gray-lighter;
+  text-align: center;
+}
+
+.horizontal-rule .label {
+  position: relative;
+  top: -1.5em;
+  display: inline-block;
+  padding: 1em;
+  background: $body-bg;
+  font-size: 1em;
+  color: $pale-text;
+  text-transform: capitalize;
+}
+
+.panel-body .horizontal-rule {
+  border-top-color: $pale-text;
+  .label {
+    background-color: $gray-lighter;
+  }
+}
+
+//
+// eHealth Alert Arrows
+// --------------------------------------------------
+
+/*
+
+These are bootstrap style, so they require three classes to work:
+.arrow for the base styles
+.arrow-dir-XX for the direction (up, rt, dn or lt)
+.arrow-pos-X for the position along the respective edge (t, r, b, l or c)
+
+So a complete alert with an arrow pointing up in the top left is:
+<div class="alert alert-info arrow arrow-dir-up arrow-pos-lt"></div>
+
+*/
+
+/* Give alerts without arrows some vertical space */
+.alert:not(.arrow){
+  margin: 20px 0;
+}
+
+.arrow {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-color: inherit;
+  }
+}
+
+/* Alert Arrow variants, clockwise from top left*/
+
+/* Colours and Offset from edges */
+.arrow-dir-up{
+  margin-top: 20px;
+  &:before{
+    top: -10px;
+    border-top: none;
+    border-right: 7px solid transparent;
+    border-bottom-width: 10px;
+    border-bottom-style: solid;
+    border-left: 7px solid transparent;
+  }
+}
+.arrow-dir-rt{
+  margin-right: 20px;
+  &:before{
+    right: -10px;
+    border-top: 7px solid transparent;
+    border-right: none;
+    border-bottom: 7px solid transparent;
+    border-left-width: 10px;
+    border-left-style: solid;
+  }
+}
+.arrow-dir-dn{
+  margin-bottom: 20px;
+  &:before{
+    bottom: -10px;
+    border-top-width: 10px;
+    border-top-style: solid;
+    border-right: 7px solid transparent;
+    border-bottom: none;
+    border-left: 7px solid transparent;
+  }
+}
+.arrow-dir-lt{
+  margin-left: 20px;
+  &:before{
+    left: -10px;
+    border-top: 7px solid transparent;
+    border-right-width: 10px;
+    border-right-style: solid;
+    border-bottom: 7px solid transparent;
+    border-left: none;
+  }
+}
+
+/* Offset from corners */
+.arrow-pos-t:before{
+  top: 10px;
+}
+.arrow-pos-r:before{
+  right: 10px;
+}
+.arrow-pos-b:before{
+  bottom: 10px;
+}
+.arrow-pos-l:before{
+  left: 10px;
+}
+.arrow-dir-up.arrow-pos-c:before,
+.arrow-dir-dn.arrow-pos-c:before{
+  left: calc(50% - 7px);
+}
+.arrow-dir-rt.arrow-pos-c:before,
+.arrow-dir-lt.arrow-pos-c:before{
+  top: calc(50% - 7px);
 }
