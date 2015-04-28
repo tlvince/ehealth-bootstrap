@@ -11,7 +11,7 @@ url: "http://ehealthafrica.org" # the base hostname & protocol for your site
 destination:      _gh_pages
 encoding:         UTF-8
 
-exclude:          ["bower_components", "node_modules", "grunt", "sass"]
+exclude:          ["bower_components", "node_modules", "grunt", "sass", "bower.json", "package.json"]
 
 # Custom vars
 current_version:  3.3.1
