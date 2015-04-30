@@ -175,3 +175,102 @@
 @media print {
   @include responsive-invisibility('.hidden-print');
 }
+
+
+// Floats utilities
+
+.pull-right-xs {
+  @media (max-width: $screen-xs-max) {
+    float: right !important;
+  }
+}
+
+.pull-left-xs {
+  @media (max-width: $screen-xs-max) {
+    float: left !important;
+  }
+}
+
+.pull-right-sm {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    float: right !important;
+  }
+}
+
+.pull-left-sm {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    float: left !important;
+  }
+}
+
+.pull-right-sm-min {
+  @media (min-width: $screen-sm-min) {
+    float: right !important;
+  }
+}
+
+.pull-left-sm-min {
+  @media (min-width: $screen-sm-min) {
+    float: left !important;
+  }
+}
+
+.pull-right-sm-max {
+  @media (max-width: $screen-sm-max) {
+    float: right !important;
+  }
+}
+
+.pull-left-sm-max {
+  @media (max-width: $screen-sm-max) {
+    float: left !important;
+  }
+}
+
+.pull-right-md {
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    float: right !important;
+  }
+}
+
+.pull-left-md {
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+    float: left !important;
+  }
+}
+
+.pull-right-md-min {
+  @media (min-width: $screen-md-min) {
+    float: right !important;
+  }
+}
+
+.pull-left-md-min {
+  @media (min-width: $screen-md-min) {
+    float: left !important;
+  }
+}
+
+.pull-right-md-max {
+  @media (max-width: $screen-md-max) {
+    float: right !important;
+  }
+}
+
+.pull-left-md-max {
+  @media (max-width: $screen-md-max) {
+    float: left !important;
+  }
+}
+
+.pull-right-lg {
+  @media (min-width: $screen-lg-min) {
+    float: right !important;
+  }
+}
+
+.pull-left-lg {
+  @media (min-width: $screen-lg-min) {
+    float: left !important;
+  }
+}
