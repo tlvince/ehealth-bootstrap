@@ -37,6 +37,27 @@ So the red alert box with an arrow pointing up in the center (from the image abo
     <div class="alert alert-danger arrow arrow-dir-up arrow-pos-c"></div>
 ````
 
+### Responsive helper classes for floating elements
+
+Sometimes it is helpful to only pull an element on certain screen sizes. The
+following helper classes allow to do exactly that:
+
+  - `.pull-right-xs` and `.pull-left-xs`
+  - `.pull-right-sm` and `.pull-left-sm`
+  - `.pull-right-md` and `.pull-left-md`
+  - `.pull-right-lg` and `.pull-left-lg`
+
+In order to have an element be pulled right or left on multiple screen sizes
+there are additional utility classes defined as follows:
+
+  - `.pull-*-sm-min` and `.pull-*-sm-max`
+  - `.pull-*-md-min` and `.pull-*-md-max`
+
+So `.pull-right-sm-min` is basically a shortcut for not having to apply all of
+`.pull-right-sm`, `.pull-right-md`, and `.pull-right-lg` together on the same
+element.
+
+
 ## Documentation
 
 Bootstrap's documentation, included in this repo in the root directory, is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub Pages at <http://getbootstrap.com>. The docs may also be run locally.
