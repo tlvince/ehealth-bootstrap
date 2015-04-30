@@ -128,127 +128,162 @@
 // Navbar
 // --------------------------------------------------
 
-// Default navbar
+/* Customizations For All Types */
+.navbar-default, 
+.navbar-inverse,
+.navbar-call-center,
+.navbar-sense,
+.navbar-journal,
+.navbar-dashboard {
+  .navbar-brand > img {
+    position: relative;
+    top: 3px;
+    height: 32px;
+    display: inline-block;
+    margin-right: 5px;
+  }  
+  .navbar-brand > span {
+    display: inline-block;
+    position: relative;
+    top: 5px;
+  }
+  .navbar-nav {
+    position: relative;
+    top: 9px;
+  }
+  .navbar-nav > li {
+    margin: 0px 5px;
+  }
+  .navbar-nav > li > a {
+    border: 2px solid transparent;
+  }
+  .navbar-nav > li > a:hover {
+    background: transparent;
+    border-color: black;
+    border-collapse: collapse;
+
+    border-radius: $border-radius-base;
+  }
+  .navbar-nav > .open > a,
+  .navbar-nav > .active > a {
+    border-color: transparent;
+    border-radius: $border-radius-base;
+    cursor: default;
+  }
+}
+
+
+// Navbar - Default
 .navbar-default {
-
-  border-radius: $navbar-border-radius;
-
   .navbar-nav > .open > a,
   .navbar-nav > .active > a {
     text-shadow: 0 0 0;
+    border-color: transparent;
+  }
+  .navbar-brand,
+  .navbar-nav > li > a {
+    text-shadow: 0 0 0;
+  }
+  .navbar-nav > li > a:hover {
+    border-color: $navbar-default-link-active-bg;
   }
 }
 
-.navbar-brand,
-.navbar-nav > li > a {
-  text-shadow: 0 0 0;
-}
 
-.navbar-brand > img {
-  position: relative;
-  top: -6px;
-  height: 32px;
-  display: inline-block;
-  margin-right: 5px;
-}
-
-.navbar-brand > span {
-  position: relative;
-  top: -6px;
-}
-
-
-// Inverted navbar
+// Navbar - Inverted
 .navbar-inverse {
-
   .navbar-nav > .open > a,
-  .navbar-nav > .active > a {
-
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:hover {
+    color: #000;
+    background: #FFF;
+    border-color: transparent;
   }
-
   .navbar-brand,
-  .navbar-nav > li > a {
-
+  .navbar-nav > li > a:hover {
+    border-color: #FFF;
   }
 }
 
-// Undo rounded corners in static and fixed navbars
-.navbar-static-top,
-.navbar-fixed-top,
-.navbar-fixed-bottom {
-  border-radius: 0;
-}
-
-
-// Call Center navbar
+// Navbar - Call Center
 .navbar-call-center {
-
   background: $brand-primary;
-
   .navbar-nav > .open > a,
-  .navbar-nav > .active > a {
-    color: $text-color-inverse;
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:hover {
+    color: $brand-primary;
+    background: #FFF;
+    border-color: transparent;
   }
   .navbar-brand,
   .navbar-nav > li > a {
     color: $text-color-inverse;
   }
+  .navbar-nav > li > a:hover {
+    border-color: #FFF;
+  }
 }
 
 
-// Sense navbar
+// Navbar - Sense
 .navbar-sense {
-
   background: $brand-info;
-
   .navbar-nav > .open > a,
-  .navbar-nav > .active > a {
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:hover {
     color: $text-color-inverse;
+    background: darken($brand-info, 25%);
+    border-color: transparent;
   }
   .navbar-brand,
   .navbar-nav > li > a {
     color: $text-color-inverse;
   }
+  .navbar-nav > li > a:hover {
+    border-color: darken($brand-info, 25%);
+  }
 }
 
 
-// Nutrition Journal navbar
+// Navbar - Nutrition Journal
 .navbar-journal {
-
   background: $brand-success;
-
   .navbar-nav > .open > a,
-  .navbar-nav > .active > a {
-    color: $text-color-inverse;
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:hover {
+    color: #FFF;
+    background: darken($brand-success, 12%);
+    border-color: transparent;
   }
   .navbar-brand,
   .navbar-nav > li > a {
     color: $text-color-inverse;
   }
+  .navbar-nav > li > a:hover {
+    border-color: darken($brand-success, 12%);
+  }
 }
 
 
-// Dashboard navbar
+// Navbar - Dashboard
 .navbar-dashboard {
-
   background: $brand-africa;
-
   .navbar-nav > .open > a,
-  .navbar-nav > .active > a {
-    color: $text-color;
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:hover {
+    color: #FFF;
+    background: darken($brand-africa, 20%);
+    border-color: transparent;
   }
   .navbar-brand,
   .navbar-nav > li > a {
     color: $text-color;
   }
+  .navbar-nav > li > a:hover {
+    border-color: darken($brand-africa, 25%);
+  }
 }
 
-.navbar-call-center navbar-nav > li > a:hover,
-.navbar-sense       navbar-nav > li > a:hover,
-.navbar-journal     navbar-nav > li > a:hover,
-.navbar-dashboard   navbar-nav > li > a:hover {
-  background: rgba(0, 0, 0, 0.25);
-}
 
 
 
