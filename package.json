@@ -80,6 +80,6 @@
     }
   },
   "dependencies": {
-    "grunt-sass": "^0.17.0"
+    "grunt-sass": "^0.18.1"
   }
 }
