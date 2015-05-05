@@ -20,8 +20,7 @@ repo:             https://github.com/eHealthAfrica/ehealth-bootstrap
 twitter_username: ehealthafrica
 github_username:  ehealthafrica
 
-ehealth_versions: ["default"]
-ehealth_theme_version: "default"
+ehealth_theme:    "default"
 ehealth_apps:     ["call-center", "sense", "journal", "dashboard"]
 
 # Build settings

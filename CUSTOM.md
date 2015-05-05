@@ -1,4 +1,11 @@
-# Custom eHealth Elements & Attributes
+---
+layout: default
+title: Custom
+permalink: /custom/
+theme: default
+---
+
+# eHealth Bootstrap: Custom Styles
 
 - [Arrows for Alerts](#arrows-for-alerts)
 - [Responsive helper classes for floating elements](#responsive-helper-classes-for-floating-elements)
@@ -8,7 +15,7 @@
 
 The eHealth theme includes three additional class types to add a small arrow to any side of an alert box, to help make clear what the alert refers to:
 
-![](screenshots/alert-arrow.png)
+![](/screenshots/alert-arrow.png)
 
 These are bootstrap style, so they require three classes to work:
 

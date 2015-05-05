@@ -5,7 +5,19 @@
 
   <body role="document">
 
+      <div class="container">
+
+        <div class="row">
+          <p><a href="{{site.url}}"><img src="/images/app-ehealth.png"></a></p>
+        </div>
+
         {{ content }}
+
+        <div class="row add-top">
+          <p><a class="btn btn-primary" href="{{site.repo}}">View Source Code</a></em></p>
+        </div>
+
+      </div>
 
     {% include footer.html %}
 
