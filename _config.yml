@@ -1,11 +1,11 @@
 # Site settings
-title: eHealth Bootstrap Theme
+title: Bootstrap Theme | eHealth Africa
 email: brennan.novak@ehealthnigeria.org
 
-description: A Jekyll config that renders a site for eHealth Bootstrap testing
+description: A site for eHealth Bootstrap theme
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://ehealthafrica.org" # the base hostname & protocol for your site
+url: "http://ehealthafrica.github.io/ehealth-bootstrap/" # the base hostname & protocol for your site
 
 # Server
 destination:      _gh_pages
@@ -14,7 +14,7 @@ encoding:         UTF-8
 exclude:          ["bower_components", "node_modules", "grunt", "sass", "bower.json", "package.json"]
 
 # Custom vars
-current_version:  3.3.1
+current_version:  0.0.7
 repo:             https://github.com/eHealthAfrica/ehealth-bootstrap
 
 twitter_username: ehealthafrica
