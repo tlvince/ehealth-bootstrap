@@ -1,16 +1,16 @@
 <head>
   <title>{{ site.title }}{% if page.title %}{{ page.title }}{% endif %}</title>
 
-  <link rel="icon" href="/images/favicon.ico">
+  <link rel="icon" href="{{site.url}}/images/favicon.ico">
 
   <!-- Bootstrap core CSS -->
-  <link href="/{{site.ehealth_theme}}/bootstrap.css" rel="stylesheet">
+  <link href="{{site.url}}{{site.ehealth_theme}}/bootstrap.css" rel="stylesheet">
 
   <!-- Bootstrap theme -->
-  <link href="/{{site.ehealth_theme}}/bootstrap-ehealth.css" rel="stylesheet">
+  <link href="{{site.url}}{{site.ehealth_theme}}/bootstrap-ehealth.css" rel="stylesheet">
 
   <!-- Styleguide CSS -->
-  <link href="/css/styleguide.css" rel="stylesheet">
+  <link href="{{site.url}}/css/styleguide.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
