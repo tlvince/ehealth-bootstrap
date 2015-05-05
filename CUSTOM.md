@@ -15,7 +15,7 @@ theme: default
 
 The eHealth theme includes three additional class types to add a small arrow to any side of an alert box, to help make clear what the alert refers to:
 
-![](/screenshots/alert-arrow.png)
+![]({{site.url}}screenshots/alert-arrow.png)
 
 These are bootstrap style, so they require three classes to work:
 
