@@ -14,7 +14,7 @@ encoding:         UTF-8
 exclude:          ["bower_components", "node_modules", "grunt", "sass", "bower.json", "package.json"]
 
 # Custom vars
-current_version:  0.0.7
+current_version:  0.0.9
 repo:             https://github.com/eHealthAfrica/ehealth-bootstrap
 
 twitter_username: ehealthafrica
