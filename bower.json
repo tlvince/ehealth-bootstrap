@@ -13,8 +13,8 @@
   ],
   "homepage": "http://ehealthafrica.org",
   "main": [
-    "default/bootstrap.css",
-    "default/bootstrap-ehealth.css",
+    "default/bootstrap.scss",
+    "default/bootstrap-ehealth.scss",
     "fonts/Cabin-Bold.eot",
     "fonts/Cabin-Bold.otf",
     "fonts/Cabin-Bold.ttf",
